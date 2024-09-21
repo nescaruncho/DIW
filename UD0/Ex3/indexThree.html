@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellow-White</title>
+    <style>
+        #container {
+            border: 1px dotted red;
+            max-width: fit-content;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 20px;
+        }
+
+        #yellow,
+        #white {
+            width: 300px;
+            height: 180px;
+        }
+
+        #yellow {
+            background-color: rgb(246, 246, 129);
+            border: 1px solid black;
+        }
+
+        #white {
+            background-color: white;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="yellow"></div>
+        <div id="white"></div>
+    </div>
+</body>
+
+</html>

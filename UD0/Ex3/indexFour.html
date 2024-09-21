@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor oscuro con borde</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 2px solid black;
+            max-width: fit-content;
+            max-height: fit-content;
+            padding: 10px;
+        }
+
+        #colum-one {
+            display: grid;
+            grid-template-rows: 50% 50%;
+        }
+
+        #green,
+        #red {
+            width: 300px;
+            height: 250px;
+            margin: 5px;
+        }
+
+        #green {
+            background-color: green;
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        #colum-two {
+            display: grid;
+            grid-template-rows: 20% 80%;
+        }
+
+        #blue {
+            background-color: blue;
+
+        }
+
+        #purple {
+            background-color: purple;
+        }
+
+        #blue,
+        #purple {
+            margin: 5px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="colum-one">
+            <div id="green"></div>
+            <div id="red"></div>
+        </div>
+        <div id="colum-two">
+            <div id="blue"></div>
+            <div id="purple"></div>
+        </div>
+    </div>
+</body>
+
+</html>

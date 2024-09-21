@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        html {
+            max-width: 800px;
+        }
+
+        body {
+            display: grid;
+            grid-template-rows: 1fr 10fr 1fr;
+            height: 800px;
+        }
+
+        #cabeceira {
+            background-color: black;
+            color: yellow;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+        }
+
+        #navegacion {
+            background-color: grey;
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a {
+            color: rgb(91, 233, 91);
+        }
+
+        #contido {
+            font-family: Arial;
+            padding: 20px;
+            background-color: rgb(233, 233, 222);
+            color: rgb(174, 32, 174);
+        }
+
+        #pe {
+            text-align: center;
+            font-size: larger;
+            background-color: rgb(181, 171, 171);
+            color: rgb(162, 25, 25);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="cabeceira">
+        <p>Párrafo en la cabecera de la página.</p>
+    </div>
+    <main id="container">
+        <div id="navegacion">
+            <ul>
+                <li><a href="index.html">Enlace 1</a></li>
+                <li><a href="index.html">Enlace 2</a></li>
+                <li><a href="index.html">Enlace 3</a></li>
+            </ul>
+        </div>
+        <div id="contido">
+            <h1>Ejemplo: Uso del elemento "div" y del atributo <i>id</i></h1>
+        </div>
+    </main>
+    <div id="pe">
+        <p>Párrafo en el pie de página</p>
+    </div>
+</body>
+
+</html>
