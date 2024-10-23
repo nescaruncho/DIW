@@ -3,64 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./css/images/index/icon.png">
     <link rel="stylesheet" href="./css/estilo.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="./js/scriptIndex.js"></script>
+    <title>Cerveceros - Sabor y tradición en 33cl</title>
 </head>
 <body>
     <header>
-        <img src="" alt="">
-        <div id="fistHeader">
-            <img id="logoHeaderIndex" src="./css/images/logo.png" alt="Logo Cerveceros Web">
+        <div id="divHeader">
+            <div>
+            <a href="index.html">
+                <img id="logoHeaderIndex" src="./css/images/index/logo.png" alt="Logo Cerveceros Web">                
+            </a>
+            </div>
             <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Mi cuenta</a></li>
-                    <li><a href="#"><img src="./css/images/carrito-de-compras.png" alt="carrito"></a></li>
+                <ul id="menuIndex">
+                    <li><a href="index.html"><img id="inicio" src="./css/images/index/pagina-de-inicio.png" alt="inicio"></a></li>
+                    <li><a href="#"><img id="usuario" src="./css/images/index/usuario.png" alt=""></a></li>
+                    <li><a href="#"><img id="carritoCompras" src="./css/images/index/carrito-de-compras.png" alt="carrito"></a></li>
                 </ul>
             </nav>
         </div>
-        <h1 id="tituloIndex">CERVECEROS</h1>
-        <p>Sabor y tradición en 33cl</p>
+        <div id="divTitle">
+            <h1 id="tituloIndex"><a href="index.html">CERVECEROS</a></h1>
+            <p id="slogan">Sabor y tradición en 33cl</p>
+        </div>
     </header>
     <main>
-        <section id="sectionIndex">
-            <h2>Productos destacados</h2>
+        <h2 id="productsTitle">Productos destacados</h2>
+        <section id="productSection">
             <article>
-                <img src="./css/images/cerveza1.jpg" alt="Cerveza 1">
-                <h3>Cerveza 1</h3>
+                <a href="">
+                    <img id="cerveza1" src="./css/images/products/cervez1_basqueland_ipa.webp" alt="Cerveza 1">
+                    <h3>Basqueland Imparable Ipa</h3>
+                </a>
                 <p>Descripción cerveza 1</p>
                 <p>2,50€</p>
                 <button>Añadir al carrito</button>
             </article>
             <article>
-                <img src="./css/images/cerveza2.jpg" alt="Cerveza 2">
-                <h3>Cerveza 2</h3>
+                <a href="#">
+                    <img id="cerveza2" src="./css/images/products/cerveza2_arriaca_stout.webp" alt="Cerveza 2">
+                    <h3>Arriaca Imperial Russian Stout</h3>
+                </a>
                 <p>Descripción cerveza 2</p>
                 <p>2,50€</p>
                 <button>Añadir al carrito</button>
             </article>
             <article>
-                <img src="./css/images/cerveza3.jpg" alt="Cerveza 3">
-                <h3>Cerveza 3</h3>
+                <a href="#">
+                    <img id="cerveza3" src="./css/images/products/cerveza3_sesma_helles.webp" alt="Cerveza 3">
+                    <h3>Sesma Helles</h3>
+                </a>
                 <p>Descripción cerveza 3</p>
+                <p>2,50€</p>
+                <button>Añadir al carrito</button>
+            </article>
+            <article>
+                <a href="#">
+                    <img id="cerveza4" src="./css/images/products/cerveza4_dougalls_ipa.webp" alt="Cerveza 4">
+                    <h3>Dougall´s IPA 4 Bot 33 cl</h3>
+                </a>
+                <p>Descripción cerveza 4</p>
                 <p>2,50€</p>
                 <button>Añadir al carrito</button>
             </article>
         </section>
         <section id="contact">
-            <h2>Contacto</h2>
-            <form action="">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                <button>Enviar</button>
-            </form>
+            <h2 id="contactTitle">Contacto</h2>
+            <div>
+                <form action="">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    <button>Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
+        <p id="politica"><a id="politica" href="#">Política de privacidad</a></p>
         <p>© 2022 Cerveceros. Todos los derechos reservados.</p>
     </footer>
 </body>

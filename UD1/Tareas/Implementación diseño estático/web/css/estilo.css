@@ -1,0 +1,169 @@
+
+/* AJUSTES GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h3 {
+    font-family: 'Anton', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-image: url('./images/index/background/background_img_4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+#divHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin: 0 auto;
+    align-items: center;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+    background-color: transparent;
+    position: fixed;
+    height: 60px;
+}
+
+#divHeader.scrolled {
+    background-color: #E57822;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#divHeader nav {
+    text-align: right;
+}
+
+#menuIndex {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menuIndex li {
+    display: inline;
+    margin-right: 1em;
+}
+
+#logoHeaderIndex {
+    width: 10%;
+}
+
+#carritoCompras, #inicio, #usuario {
+    width: 3.5%;;
+}
+
+#divTitle {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 9em;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+#slogan {
+    color: black;
+}
+
+
+/* MAIN */
+
+#productsTitle {
+    margin: 1em;
+    font-size: 50px;
+    text-align: center;
+}
+
+#productSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#productSection article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1em;
+}
+
+#productSection article  {
+    transition: transform 0.3s ease; /* Suaviza la animación con una duración de 0.3 segundos */
+}
+
+#productSection article:hover {
+    transform: translateY(-10px); /* Eleva la imagen 10px hacia arriba */
+}
+
+#cerveza1, #cerveza2, #cerveza3, #cerveza4 {
+    max-width: 20%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#contact {
+    background-image: url('./images/index/background/background_img_2.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el header */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    gap: 0.5em;
+}
+
+form > button {
+    max-width: 15%;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #020202;
+    height: 100px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+#politica {
+    color: white;
+}
