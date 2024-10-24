@@ -66,7 +66,7 @@ header {
     width: 10%;
 }
 
-#carritoCompras, #inicio, #usuario {
+#carritoCompras, #inicio, #usuario, #catalogo {
     width: 3.5%;;
 }
 
@@ -92,6 +92,44 @@ a {
 }
 
 /* MAIN */
+
+#processArticle {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-image: url('./images/index/background/background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin: 2em;
+}
+
+#processTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+    padding: 1em;
+    color: white;
+}
+
+#processArticle p {
+    align-items: center;
+    text-align: justify;
+    font-size: 1.5em;
+    padding: 2em;
+    margin: 2em;
+    color: white;
+    background-color: #020202;
+    opacity: 0.6;
+}
+
+#processArticle a {
+    color: #E57822;
+}
+
+
 
 #productsTitle {
     margin: 1em;
@@ -239,4 +277,134 @@ footer {
 
 #politica {
     color: white;
+    
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    #divHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #divHeader nav {
+        display: none;
+    }
+
+    #menuIndex {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    #logoHeaderIndex {
+        width: 20%;
+    }
+
+    #carritoCompras, #inicio, #usuario, #catalogo {
+        width: 10%;
+    }
+
+    #divTitle {
+        padding: 2em;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #processArticle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+    }
+
+    #processTitle {
+        font-size: 3em;
+    }
+
+    #processArticle p {
+        font-size: 1em;
+    }
+
+    #productsTitle {
+        font-size: 40px;
+    }
+
+    #productSection {
+        grid-template-columns: 1fr;
+    }
+
+    #productSection article {
+        margin: 1em;
+    }
+
+    #beerContainer img {
+        max-width: 50%;
+    }
+
+    #beerContainer h3 {
+        font-size: 1em;
+    }
+
+    #beerContainer p {
+        font-size: 0.8em;
+    }
+
+    #beerContainer button {
+        font-size: 0.8em;
+    }
+
+    #cerveza1, #cerveza2, #cerveza3, #cerveza4 {
+        max-width: 50%;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+    }
+
+    #contactTitle {
+        font-size: 3em;
+    }
+
+    #contactForm {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form > label {
+        font-size: 1em;
+    }
+
+    form > input, textarea {
+        padding: 0.5em;
+        border-radius: 20px;
+    }
+
+    form > button {
+        font-size: 0.8em;
+    }
+
+    #politica {
+        font-size: 0.8em;
+    }
+
+    footer {
+        height: 200px;
+    }
+
 }
