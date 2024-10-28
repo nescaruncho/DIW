@@ -1,0 +1,60 @@
+  /* ==============================
+   PROCESO
+   ============================== */
+
+/* MAIN */
+
+/*Title*/
+
+#processTitleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../../images/index/background/background_image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1em;
+  margin: 2em;
+  font-size: 4em;
+  padding: 1em;
+  color: #e57822;
+  text-shadow: white 2px 2px 2px;
+}
+
+
+#sectionProcessText h3 {
+  text-align: center;
+font-size: 2em;
+}
+
+#sectionProcessText p {
+  font-size: 1.5em;
+  padding: 2em;
+  margin: 2em;
+  color: white;
+  background-color: #020202;
+  opacity: 0.6;
+}
+
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #e57822;
+  height: 100px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+#politica {
+  color: white;
+}
+
+
