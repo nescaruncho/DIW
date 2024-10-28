@@ -1,0 +1,87 @@
+/* ==============================
+   Reset y Normalización
+   ============================== */
+
+   * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ==============================
+     Estilos Globales
+     ============================== */
+  
+  html,
+  button {
+    background-color: white;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  h1,
+  h2 {
+    font-family: "Bebas Neue", sans-serif;
+  }
+  
+  h3 {
+    font-family: "Anton", sans-serif;
+  }
+  
+  /* ==============================
+     Encabezado (#divHeader)
+     ============================== */
+  
+  header {
+    background-image: url("../images/index/background/background_img_4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #divHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin: 0 auto;
+    align-items: center;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+    background-color: transparent;
+    position: fixed;
+  }
+  
+  #divHeader.scrolled {
+    background-color: #e57822;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #menuIndex {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #menuIndex li {
+    display: inline;
+    margin-right: 1em;
+  }
+  
+  #divTitle {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #slogan {
+    color: black;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }

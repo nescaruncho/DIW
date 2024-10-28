@@ -1,0 +1,199 @@
+
+/* ==============================
+   INDEX
+   ============================== */
+
+/* MAIN */
+
+/*Proceso*/
+
+#processArticle {
+  display: flex;
+  flex-direction: row;
+  background-image: url("../../images/index/background/background_image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1em;
+  margin: 2em;
+}
+
+#processTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 5em;
+  padding: 1em;
+  color: white;
+}
+
+#processArticle p {
+  align-items: center;
+  font-size: 1.5em;
+  padding: 2em;
+  margin: 2em;
+  color: white;
+  background-color: #020202;
+  opacity: 0.6;
+}
+
+#processArticle a {
+  color: #e57822;
+}
+
+
+/*Productos*/
+
+#productsTitle {
+  margin: 1em;
+  font-size: 50px;
+  text-align: center;
+}
+
+#productSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin: 1em auto;
+  max-width: 100%;
+}
+
+#productSection article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1em;
+}
+
+#beerContainer img {
+  transition: transform 0.3s ease;
+}
+
+#beerContainer img:hover {
+  transform: translateY(-10px);
+}
+
+#beerContainer h3 {
+  font-size: 1.2em;
+  padding: 0.3em;
+}
+
+#beerContainer p {
+  font-size: 1em;
+  padding: 0.3em;
+}
+
+#beerContainer button {
+  background-color: #e57822;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  font-size: 1em;
+  border-radius: 20px;
+}
+
+#beerContainer button:hover {
+  cursor: pointer;
+}
+
+#beerContainer button a {
+  color: white;
+}
+
+#beerContainer a:hover {
+  cursor: pointer;
+}
+
+#cerveza1,
+#cerveza2,
+#cerveza3,
+#cerveza4 {
+  max-width: 30%;
+}
+
+/*CONTACTO*/
+
+#contact {
+  background-image: url("../../images/index/background/background_img_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  margin-top: 5em;
+}
+
+#contactTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 5em;
+  color: white;
+}
+
+#contactForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 0.5em;
+  width: 60%;
+}
+
+form > label {
+  font-size: 1.2em;
+  text-shadow: #020202 1px 1px 1px;
+}
+
+form > input,
+textarea {
+  padding: 0.5em;
+  border-radius: 20px;
+}
+
+form > button {
+  background-color: #e57822;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  font-size: 1em;
+  border-radius: 20px;
+}
+
+form > button:hover {
+  cursor: pointer;
+}
+
+form > button a {
+  color: white;
+  font-size: 1.2em;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #e57822;
+  height: 100px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+#politica {
+  color: white;
+}
