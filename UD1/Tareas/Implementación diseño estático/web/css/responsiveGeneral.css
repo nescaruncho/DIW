@@ -1,0 +1,193 @@
+/* RESPONSIVE */
+
+/* TABLET Y DESKTOP */
+
+@media screen and (min-width: 1025px) {
+  #divHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #divHeader nav {
+    text-align: right;
+  }
+
+  #logoHeaderIndex {
+    width: 9%;
+  }
+
+  #carritoCompras,
+  #inicio,
+  #usuario,
+  #catalogo {
+    width: 4%;
+  }
+
+  #divTitle {
+    padding: 9em;
+  }
+
+  h1 {
+    font-size: 7em;
+  }
+
+  #contactTitle {
+    background-color: #020202;
+  }
+}
+
+/* TABLET */
+
+@media screen and (max-width: 1024px) {
+  nav {
+    text-align: center;
+  }
+  ul > li {
+    padding: 2em;
+  }
+
+  #divTitle {
+    padding: 6em;
+  }
+
+  #logoHeaderIndex {
+    display: none;
+  }
+
+  #carritoCompras,
+  #inicio,
+  #usuario,
+  #catalogo {
+    width: 6%;
+  }
+
+  h1 {
+    font-size: 6em;
+  }
+
+  h1 a {
+    color: white;
+  }
+
+  #divTitle p {
+    color: white;
+    font-size: 1.7em;
+  }
+
+  header {
+    max-height: 30vh;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+
+  #contactTitle {
+    font-size: 3em;
+  }
+
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+  }
+
+  footer p {
+    font-size: 1em;
+  }
+
+  /* MÓVIL */
+
+  @media screen and (max-width: 767px) {
+    #divHeader {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 15vh;
+      width: 100%;
+    }
+
+    #menuIndex {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #menuIndex li {
+      margin: 0.5em;
+    }
+
+    #carritoCompras,
+    #inicio,
+    #usuario,
+    #catalogo {
+      width: 8vw;
+    }
+
+    header {
+      max-height: 30vh;
+    }
+
+    #divTitle {
+      padding: 4em;
+    }
+
+    #slogan {
+      display: none;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    h1 a {
+      color: #020202;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-height: 500px;
+        width: 100%;
+      }
+  
+      #contactTitle {
+        font-size: 3em;
+      }
+  
+      #contactForm {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+      }
+  
+      form {
+        width: 80%;
+      }
+  
+      form > label {
+        font-size: 1em;
+      }
+  
+      form > input,
+      textarea {
+        padding: 0.5em;
+        border-radius: 20px;
+      }
+  
+      form > button {
+        font-size: 0.8em;
+      }
+  
+      footer p {
+        font-size: 0.8em;
+      }  
+  }
+}

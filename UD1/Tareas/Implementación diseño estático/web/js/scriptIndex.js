@@ -9,12 +9,17 @@ window.addEventListener("scroll", function () {
 });
 
 window.addEventListener("scroll", function () {
+  // Elementos a mostrar
   const processArticle = document.getElementById("processArticle");
-  const processTitleSection = document.getElementById("processTitleSection");
+  const productsTitle = document.getElementById("productsTitle");
+  const productSection = document.getElementById("productSection");
 
-  // Ajuste de cuándo aparecerán (300px antes de llegar a la vista)
+  // Ajuste de cuándo aparecerán los elementos
   const offset = 80;
+  const offsetProduct = 300;
+  const offsetProcess = 150;
 
+  // Muestra processArticle cuando se desplaza a su posición
   if (processArticle) {
     const articlePosition =
       processArticle.getBoundingClientRect().top + window.scrollY;
@@ -31,18 +36,33 @@ window.addEventListener("scroll", function () {
     }
   }
 
-  if (processTitleSection) {
-    const titlePosition =
-      processTitleSection.getBoundingClientRect().top + window.scrollY;
-    console.log("ScrollY:", window.scrollY, "Title Position:", titlePosition); // Verificar valores
-    if (window.scrollY > titlePosition - window.innerHeight + offset) {
-      processTitleSection.style.opacity = "1";
-      processTitleSection.style.transform = "translateY(0)";
-      console.log("#processTitleSection visible"); // Log para confirmar cambio de estilo
+  // Muestra productsTitle y productSection cuando se desplaza a su posición
+  if (processArticle && productsTitle) {
+    // Calcula la posición inferior de processArticle
+    const processArticleBottom =
+      processArticle.getBoundingClientRect().bottom + window.scrollY;
+
+    // Aparece productsTitle cuando se supera el borde inferior de processArticle
+    if (window.scrollY > processArticleBottom - offsetProduct) {
+      productsTitle.style.opacity = "1";
+      productsTitle.style.transform = "translateY(0)";
+    }
+
+    if (productsTitle && productSection) {
+      // Calcula la posición inferior de productsTitle
+      const productsTitleBottom =
+        productsTitle.getBoundingClientRect().bottom + window.scrollY;
+
+      // Aparece productSection cuando se supera el borde inferior de productsTitle
+      if (window.scrollY > productsTitleBottom - offsetProduct) {
+        productSection.style.opacity = "1";
+        productSection.style.transform = "translateY(0)";
+      }
     }
   }
 });
 
+// Función para actualizar el texto de proceso según el tamaño de la pantalla
 function updateProcessText() {
   const processText = document.getElementById("processText");
 
@@ -59,38 +79,3 @@ function updateProcessText() {
 // Llama a la función en la carga y cada vez que la ventana cambia de tamaño
 window.addEventListener("load", updateProcessText);
 window.addEventListener("resize", updateProcessText);
-
-document.addEventListener("DOMContentLoaded", function () {
-  const slides = document.querySelectorAll(".slide");
-  const prevButton = document.querySelector(".prev");
-  const nextButton = document.querySelector(".next");
-  let currentSlide = 0;
-
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      if (i === index) {
-        slide.classList.add("active");
-        slide.style.opacity = "0";
-        setTimeout(() => {
-          slide.style.transition = "opacity 0.5s";
-          slide.style.opacity = "1";
-        }, 10); // Slight delay to ensure transition is applied
-      } else {
-        slide.classList.remove("active");
-        slide.style.opacity = "0";
-      }
-    });
-  }
-
-  prevButton.addEventListener("click", function () {
-    currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
-    showSlide(currentSlide);
-  });
-
-  nextButton.addEventListener("click", function () {
-    currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
-    showSlide(currentSlide);
-  });
-
-  showSlide(currentSlide);
-});
