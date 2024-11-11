@@ -13,11 +13,21 @@ window.addEventListener("scroll", function () {
   const processArticle = document.getElementById("processArticle");
   const productsTitle = document.getElementById("productsTitle");
   const productSection = document.getElementById("productSection");
+  const beerContainer = document.getElementById("beerContainer");
 
   // Ajuste de cuándo aparecerán los elementos
   const offset = 80;
   const offsetProduct = 300;
-  const offsetProcess = 150;
+
+  if (beerContainer) {
+    const beerContainerPosition = beerContainer.getBoundingClientRect().top + window.scrollY;
+    console.log("ScrollY", window.scrollY, "Beer Container Position", beerContainerPosition); // Verificar valores
+    if (window.scrollY > beerContainerPosition - window.innerHeight + offset) {
+      beerContainer.style.opacity = "1";
+      beerContainer.style.transform = "translateY(0)";
+      console.log("#beerContainer visible"); // Log para confirmar cambio de estilo
+    }
+  }
 
   // Muestra processArticle cuando se desplaza a su posición
   if (processArticle) {

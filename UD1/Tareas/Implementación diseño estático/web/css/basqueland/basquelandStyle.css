@@ -1,0 +1,32 @@
+
+/* ==============================
+   BASQUELAND STYLE
+   ============================== */
+
+/* MAIN */
+
+/* Container */
+
+#beerContainer {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 4em;
+}
+
+#beerContainer img {
+  max-width: 40%;
+  height: auto;
+  margin-left: 8em;
+}
+
+#beerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: justify;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em;
+  padding: 1em ;
+  border: 2px solid #e57822;
+  border-radius: 20px;
+}

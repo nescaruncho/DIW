@@ -90,12 +90,6 @@
     text-decoration: none;
     color: black;
   }
-
-  #processArticle, #processTitleSection {
-    opacity: 0;       /* Inicialmente oculto */
-    transform: translateY(20px); /* Posición inicial ligeramente desplazada */
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
   
   /*CONTACTO*/
 
