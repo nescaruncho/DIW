@@ -11,22 +11,83 @@
   display: grid;
   grid-template-columns: 60% 40%;
   padding: 4em;
+  align-items: center;
 }
 
-#beerContainer img {
-  max-width: 40%;
+#beerImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#beerImg img {
+  max-width: 50%;
   height: auto;
-  margin-left: 8em;
+}
+
+#beerImg a:hover {
+  cursor: pointer;
 }
 
 #beerInfo {
   display: flex;
   flex-direction: column;
-  align-items: justify;
+  text-align: justify;
   justify-content: center;
   gap: 1em;
   margin: 1em;
   padding: 1em ;
   border: 2px solid #e57822;
   border-radius: 20px;
+  max-height: fit-content;
 }
+
+#beerInfo h4 {
+  cursor: pointer;
+  position: relative;
+}
+
+#beerInfo h4::before {
+  content: "+";
+  margin-right: 0.5em;
+  font-weight: bold;
+  color: #e57822;
+}
+
+#beerInfo h4.no-plus::before {
+  content: ""; /* Quita el símbolo "+" */
+}
+
+#beerInfo p {
+  display: none; /* Oculto por defecto */
+}
+
+#beerInfo p.always-visible {
+  display: block; /* Descripción siempre visible */
+}
+
+#beerInfo p.active {
+  display: block; /* Se muestra cuando se activa */
+}
+
+#beerContainer button {
+  background-color: #e57822;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  font-size: 1em;
+  border-radius: 20px;
+}
+
+#beerContainer button:hover {
+  cursor: pointer;
+}
+
+#beerContainer button a {
+  color: white;
+}
+
+#beerContainer a:hover {
+  cursor: pointer;
+}
+

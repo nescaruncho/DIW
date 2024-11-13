@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
-    <script src="../js/scriptIndex.js"></script>
+    <script src="../js/scriptIndex.js" defer></script>
     <title>Basqueland Imparable Ipa - Cerveceros</title>
   </head>
 
@@ -58,6 +58,7 @@
                   src="../images/index/carrito-de-compras.png"
                   alt="carrito"
               /></a>
+              <span id="cartCount">0</span>
             </li>
           </ul>
         </nav>
@@ -81,13 +82,18 @@
 
         <div id="beerInfo">
           <h3><a href="basqueland.html">Basqueland Imparable Ipa</a></h3>
-          <h4>Descripción</h4>
-          <p>
-            Cerveza de estilo IPA con un amargor moderado y un aroma a lúpulo
-            fresco. Ideal para maridar con carnes a la brasa y quesos curados.
-          </p>
-          <p>2,50€</p>
-          <button>Añadir al carrito</button>
+          <h4 class="no-plus">Descripción</h4>
+          <p class="always-visible">Cerveza de estilo IPA con un amargor moderado y un aroma a lúpulo fresco. Ideal para maridar con carnes a la brasa y quesos curados.</p>
+          <p class="always-visible">2,50€</p>
+          <h4>Ingredientes</h4>
+          <p>Malta de cebada, lúpulo, agua y levadura.</p>
+        
+          <h4>Propiedades</h4>
+          <p>Tipo: IPA <br> Color: Dorado claro <br> Graduación: 6.5% ABV.</p>
+        
+          <h4>Fabricación</h4>
+          <p>Empresa: Basqueland Brewing <br> Origen: España.</p>
+          <button class="add-to-cart">Añadir al carrito</button>
         </div>
       </article>
 

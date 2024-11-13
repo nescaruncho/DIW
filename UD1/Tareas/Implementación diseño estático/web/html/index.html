@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
-    <script src="../js/scriptIndex.js"></script>
+    <script src="../js/scriptIndex.js" defer></script>
     <title>Cerveceros - Sabor y tradición en 33cl</title>
 </head>
 
@@ -28,8 +28,8 @@
                 <ul id="menuIndex">
                     <li><a href="index.html"><img id="inicio" src="../images/index/pagina-de-inicio.png" alt="inicio"></a></li>
                     <li><a href="#"><img id="catalogo" src="../images/index/caja-de-cerveza.png" alt="catalogo"></a></li>
-                    <li><a href="#"><img id="usuario" src="../images/index/usuario.png" alt=""></a></li>
-                    <li><a href="#"><img id="carritoCompras" src="../images/index/carrito-de-compras.png" alt="carrito"></a></li>
+                    <li><a href="usuario.html"><img id="usuario" src="../images/index/usuario.png" alt=""></a></li>
+                    <li><a href="carrito.html"><img id="carritoCompras" src="../images/index/carrito-de-compras.png" alt="carrito"></a><span id="cartCount">0</span></li>
                 </ul>
             </nav>
         </div>
@@ -40,10 +40,10 @@
     </header>
     <main>
         <article id="processArticle">
-            <h2 id="processTitle"><a href="#">Proceso de elaboración</a></h2>
+            <h2 id="processTitle"><a href="proceso.html">Proceso de elaboración</a></h2>
             <p id="processText">
                 El proceso de elaboración de cerveza artesanal comienza con la mezcla de malta de cebada con agua caliente para extraer sus azúcares, lo que llamamos maceración. Luego, este líquido dulce (mosto) se hierve con lúpulo, que le da ese toque amargo y aroma tan especial. Una vez enfriado, se añade la levadura, que fermenta el azúcar en alcohol y CO2. Tras unos días de maduración, ¡ya tienes cerveza lista para disfrutar!<br>
-                Si quieres saber más, puedes encontrarlo <a href="#">aquí</a>
+                Si quieres saber más, puedes encontrarlo <a href="proceso.html">aquí</a>
             </p>
         </article>
         <h2 id="productsTitle">Productos destacados</h2>
@@ -54,7 +54,7 @@
                             alt="Cerveza 1"></a>
                     <h3><a href="basqueland.html">Basqueland Imparable Ipa</a></h3>
                     <p>2,50€</p>
-                    <button>Añadir al carrito</button>
+                    <button class="add-to-cart">Añadir al carrito</button>
                 </div>
             </article>
             <article>
@@ -64,7 +64,7 @@
                     </a>
                     <h3><a href="">Arriaca Imperial Russian Stout</a></h3>
                     <p>2,50€</p>
-                    <button>Añadir al carrito</button>
+                    <button class="add-to-cart">Añadir al carrito</button>
                 </div>
             </article>
             <article>
@@ -74,7 +74,7 @@
                     </a>
                     <h3><a href="">Sesma Helles</a></h3>
                     <p>2,50€</p>
-                    <button>Añadir al carrito</button>
+                    <button class="add-to-cart">Añadir al carrito</button>
                 </div>
             </article>
             <article>
@@ -84,7 +84,7 @@
                     </a>
                     <h3><a href="">Dougall´s IPA 4 Bot 33 cl</a></h3>
                     <p>2,50€</p>
-                    <button><a href="#">Añadir al carrito</a></button>
+                    <button class="add-to-cart"><a href="#">Añadir al carrito</a></button>
                 </div>
             </article>
         </section>

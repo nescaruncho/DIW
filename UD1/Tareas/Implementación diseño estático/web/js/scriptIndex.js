@@ -89,3 +89,43 @@ function updateProcessText() {
 // Llama a la función en la carga y cada vez que la ventana cambia de tamaño
 window.addEventListener("load", updateProcessText);
 window.addEventListener("resize", updateProcessText);
+
+document.querySelectorAll("#beerInfo h4").forEach((header) => {
+  header.addEventListener("click", function () {
+    const paragraph = this.nextElementSibling;
+    // Solo alterna visibilidad si el párrafo no es "always-visible"
+    if (!paragraph.classList.contains("always-visible")) {
+      paragraph.classList.toggle("active");
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const addToCartButtons = document.querySelectorAll(".add-to-cart"); // Seleccionamos solo los botones con la clase add-to-cart
+  const cartIcon = document.getElementById('carritoCompras'); // Obtenemos el icono del carrito
+  const cartCount = document.getElementById('cartCount'); // Obtenemos el contador del carrito
+
+  // Recorremos todos los botones para asignarles un evento de clic
+  addToCartButtons.forEach(button => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault(); // Prevenir que se recargue la página
+      addToCart(event.target); // Llamar a una función que maneje la acción
+    });
+  });
+
+  function addToCart(button) {
+    let count = parseInt(cartCount.textContent); // Obtenemos el valor actual del contador
+    cartCount.textContent = count + 1; // Aumentamos el contador
+
+    // Añadimos la clase para animar el carrito
+    cartIcon.classList.add('enlarge');
+    
+    // Eliminamos la clase después de que termine la animación (600ms)
+    setTimeout(() => {
+      cartIcon.classList.remove('enlarge');
+    }, 600);
+    
+    console.log("Producto añadido al carrito");
+  }
+});
+
