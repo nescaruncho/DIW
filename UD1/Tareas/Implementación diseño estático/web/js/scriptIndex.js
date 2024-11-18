@@ -78,11 +78,11 @@ function updateProcessText() {
 
   // Rango de pantalla deseado
   if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
-    processText.innerHTML = `Descubre más sobre el proceso de creación de nuestras cervezas artesanales <a href="./sections/proceso.html">aquí</a>`;
+    processText.innerHTML = `Descubre más sobre el proceso de creación de nuestras cervezas artesanales <a href="./proceso.html">aquí</a>`;
   } else {
     // Texto completo para pantallas fuera del rango
     processText.innerHTML = `El proceso de elaboración de cerveza artesanal comienza con la mezcla de malta de cebada con agua caliente para extraer sus azúcares, lo que llamamos maceración. Luego, este líquido dulce (mosto) se hierve con lúpulo, que le da ese toque amargo y aroma tan especial. Una vez enfriado, se añade la levadura, que fermenta el azúcar en alcohol y CO2. Tras unos días de maduración, ¡ya tienes cerveza lista para disfrutar!<br>
-      Si quieres saber más, puedes encontrarlo <a href="./sections/proceso.html">aquí</a>`;
+      Si quieres saber más, puedes encontrarlo <a href="./proceso.html">aquí</a>`;
   }
 }
 

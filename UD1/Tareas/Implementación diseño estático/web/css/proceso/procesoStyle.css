@@ -1,0 +1,76 @@
+/* ==============================
+    Proceso de Elaboración
+    ============================== */
+
+#sectionProcessTitle {
+  text-align: center;
+  margin: 2em 0;
+}
+
+#processTitle {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3em;
+  color: #e57822;
+}
+
+#processSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  padding: 1em;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 1em;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(20px);
+}
+
+#seventhStepProcess {
+  align-self: center;
+}
+
+#firstStepProcess img, #secondStepProcess img, #sixthStepProcess img, #seventhStepProcess img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 0.5em;
+}
+
+#thirdStepProcess img, #fourthStepProcess img, #fifthStepProcess img {
+  max-width: 20%;
+  height: auto;
+  margin-bottom: 0.5em;
+}
+
+.article-title {
+  font-family: "Anton", sans-serif;
+  font-size: 2em;
+  color: #e57822;
+  margin-bottom: 1em;
+}
+
+article p {
+  font-size: 1em;
+  color: #333;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+article.odd-article {
+  background-color: #f9f9f9;
+}
+
+article.even-article {
+  background-color: #fff;
+}
+
+article:hover {
+  transform: translateY(0);
+}
